@@ -1,26 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+  <title>LOLCAT CLOCK</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-    <title>LOLCAT CLOCK</title>
 </head>
 <body>
-    <div class="page">
-        <header>
-            <h1>LOLCAT CLOCK</h1>
-        </header>
-        <h4>I CAN HAZ TIME??
-            <br>
-            <span id=""clock>Clock goes here</span>
-        </h4>
-        <img id="lolcatImage" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg" alt=""lolcat>
-        <blockquote id="timeEvent">This is where events are reported</blockquote>
-        set Wake Up Time
+  <div class="page">
+    <header>
+      <h1>LOLCAT CLOCK</h1>
+    </header>
+
+    <h4>
+      I CAN HAZ TIME?? <br>
+      <span id="clock">Clock goes here</span>
+    </h4>
+
+    <img id="lolcatImage" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg" alt="lolcat">
+
+    <blockquote id="timeEvent">This is where time events are reported</blockquote>
+
+
+    set Wake Up Time
     <select id="wakeUpTimeSelector">
       <option value="1">1 AM - 2AM</option>
       <option value="2">2 AM - 3AM</option>
@@ -103,12 +105,14 @@
       <option value="23">11 PM - 12AM</option>
       <option value="24">12 AM - 1AM</option>
       </select>
-      <br>
-      <button id="partyTimeButton">Party!</button>
-      <footer>
-        <p>&copy; Skillcrush 2016</p>
-      </footer>
-    </div>
-    <script type="text/javascript" src=""script.js></script>
+    <br>
+    <button id="partyTimeButton">Party!</button>
+
+    <footer>
+      <p>&copy; Skillcrush 2016</p>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
