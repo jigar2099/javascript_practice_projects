@@ -114,7 +114,6 @@ var lunchEvent = function()
 {
     lunchtime = lunchTimeSelector.value;
 };
-
 lunchTimeSelector.addEventListener("change", lunchEvent);
 
 
