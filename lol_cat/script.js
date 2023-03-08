@@ -73,6 +73,57 @@ updateClock();
 //getting the clock to increment once a second
 var oneSecond=1000;
 setInterval(updateClock, oneSecond);
-console.log(oneSecond);
+//console.log(oneSecond);
+
+// getting the party time button to work
+var partyButton = document.getElementById("partyButton");
+console.log(partytime);
+var partyEvent = function(){
+    if (partytime<0){
+        partytime = new Date().getHours();
+        partyTimeButton.innerText = "Party Over!";
+        partyTimeButton.style.backgroundColor = "#0A8DAB";
+        console.log(partytime);
+    }
+    else{
+        partytime = -1;
+        partyTimeButton.innerText = "Party Time!";
+        partyTimeButton.style.backgroundColor = "#222";
+    }
+};
+
+partyButton.addEventListener("click", partyEvent);
+partyEvent(); 
 
 
+// Activates Wake-Up selector
+var wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
+
+var wakeUpEvent = function()
+{
+    wakeuptime = wakeUpTimeSelector.value;
+};
+
+wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
+
+
+// Activates Lunch selector
+var lunchTimeSelector =  document.getElementById("lunchTimeSelector");
+
+var lunchEvent = function()
+{
+    lunchtime = lunchTimeSelector.value;
+};
+
+lunchTimeSelector.addEventListener("change", lunchEvent);
+
+
+// Activates Nap-Time selector
+var napTimeSelector =  document.getElementById("napTimeSelector");
+
+var napEvent = function()
+{
+    naptime = napTimeSelector.value;
+};
+
+napTimeSelector.addEventListener("change", napEvent);
